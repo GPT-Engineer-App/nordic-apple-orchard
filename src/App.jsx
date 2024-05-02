@@ -1,4 +1,5 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import Header from "./components/Header";
 import Index from "./pages/Index.jsx";
 import AboutUs from "./pages/AboutUs.jsx";
 import OurApples from "./pages/OurApples.jsx";
@@ -8,6 +9,7 @@ import ContactUs from "./pages/ContactUs.jsx";
 function App() {
   return (
     <Router>
+      <Header />
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/about-us" element={<AboutUs />} />
